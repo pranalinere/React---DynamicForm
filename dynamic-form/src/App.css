@@ -1,0 +1,154 @@
+/* General Container Styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Headers */
+h1, h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Labels and Inputs */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1rem;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar div {
+  height: 100%;
+  background-color: green;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  background-color: hsl(205, 100%, 36%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  table, th, td {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.7rem;
+  }
+
+  th::first-letter {
+    text-transform: uppercase;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(205, 100%, 36%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.checkmark {
+  margin-left: 10px;
+  font-size: 20px;
+}
